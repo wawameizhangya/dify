@@ -558,7 +558,7 @@ services:
       ENABLE_WEBSITE_WATERCRAWL: ${ENABLE_WEBSITE_WATERCRAWL:-true}
   # The postgres database.
   db:
-    image: postgres:15-alpine
+    image: postgres:14
     restart: always
     environment:
       PGUSER: ${PGUSER:-postgres}
